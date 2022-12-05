@@ -48,8 +48,8 @@ int Josephus(int N, int M)
         }
         else 
         {
-            k++;
             p = p->next;
+            k++;
         }
     }
     return p->number;
@@ -66,4 +66,10 @@ int main()
     end = clock();
     cout << "\nThoi gian: " << (double) (end-start) / CLOCKS_PER_SEC << "s";
 }
-// Độ phức tạp thuật toán với M=1 là O(N)
+/* 
+Độ phức tạp thuật toán với M = 1 là O(N)
+Nhap N va M:
+5000000 1
+Nguoi chien thang la so 1611393
+Thoi gian: 0.586s
+*/
